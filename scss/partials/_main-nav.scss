@@ -1,0 +1,33 @@
+.main-nav {
+  padding: 30px 0;
+  font-size: 16px;
+  line-height: 18.75px;
+
+  @include large {
+    padding: 30px 0 20px;
+  }
+
+  &__list {
+    width: 60%;
+    margin: 0 auto;
+
+    @include extraLarge {
+      width: 80%;
+      text-align: center;
+    }
+  }
+
+  &__list-item {
+    margin-right: 30px;
+
+    @include large {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__link:hover {
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    color: $green;
+  }
+}
