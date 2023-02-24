@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 400 $mainFontSize $mainFont;
+  line-height: 19.69px;
+  color: $darkGrey;
+  background-color: $grey;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
