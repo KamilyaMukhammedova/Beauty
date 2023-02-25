@@ -1,0 +1,111 @@
+.main-block {
+  color: $white;
+  position: relative;
+  background: url(../../images/main-image.png) top center/100% no-repeat;
+  padding: 11% 0 20.8% 0;
+
+  @include medium {
+    background: url(../../images/main-image.png) 70% center/cover no-repeat;
+    padding: 0;
+    height: 400px;
+    margin-bottom: 200px;
+  }
+
+  @include small {
+    background-position: 66% center;
+  }
+
+  &__test {
+    background-color: red;
+    height: 300px;
+  }
+
+  &__content {
+    position: absolute;
+    top: 43%;
+    left: 21%;
+    transform: translate(-21%, -43%);
+
+    @include medium {
+      transform: translate(-50%, 0);
+      top: 99%;
+      left: 50%;
+      text-align: center;
+      color: $green;
+    }
+
+    @include small {
+      width: 90%;
+    }
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 56.25px;
+
+    @include extraLarge {
+      font-size: 40px;
+      line-height: 30px;
+    }
+
+    @include large {
+      font-size: 30px;
+      line-height: 20px;
+    }
+
+    @include small {
+      font-size: 26px;
+    }
+  }
+
+  &__text {
+    width: 70%;
+    line-height: 20px;
+    margin-bottom: 9%;
+
+    @include extraLarge {
+      line-height: 19.69px;
+      margin-bottom: 5%;
+      width: 50%;
+    }
+
+    @include large {
+      line-height: 19.69px;
+      margin-bottom: 3%;
+      width: 40%;
+    }
+
+    @include medium {
+      width: 100%;
+    }
+
+    @include small {
+      line-height: 16.41px;
+      margin-bottom: 5%;
+    }
+  }
+
+  &__link {
+    line-height: 16.41px;
+    display: inline-block;
+    padding: 10px 32px 10px 40px;
+    border: 1px solid $white;
+    border-radius: 17px;
+    letter-spacing: 3px;
+
+    &:hover {
+      background-color: $white;
+      color: $green;
+    }
+
+    @include extraLarge {
+      letter-spacing: 1px;
+      padding: 10px 25px 10px 27px;
+    }
+
+    @include small {
+      font-size: 12px;
+      padding: 8px 22px 8px 25px;
+    }
+  }
+}
