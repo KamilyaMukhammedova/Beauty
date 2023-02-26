@@ -1,0 +1,266 @@
+.special-offer {
+  padding-top: 54px;
+
+  @include medium {
+    padding-top: 30px;
+  }
+
+  &__box1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 55px 0 9px;
+
+    @include extraLarge {
+      padding-left: 25px;
+    }
+
+    @include large {
+      padding: 0;
+      justify-content: space-around;
+    }
+
+    @include medium {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    color: $black;
+    font-size: 24px;
+    line-height: 28.13px;
+
+    @include medium {
+      width: 100%;
+      text-align: center;
+      font-size: 21px;
+    }
+  }
+
+  &__truck-div {
+    @include medium {
+      display: none;
+    }
+  }
+
+  &__box2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 10px;
+
+    @include extraLarge {
+      padding: 0 25px;
+    }
+
+    @include large {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include small {
+      display: block;
+    }
+  }
+
+  &__card {
+    background-color: $white;
+    width: 23%;
+    text-align: center;
+    padding: 20px 0 15px;
+
+    @include large {
+      padding-bottom: 25px;
+      width: 40%;
+      margin: 0 2% 20px;
+    }
+
+    @include medium {
+      width: 46%;
+    }
+
+    @include small {
+      width: 93%;
+      margin: 0 auto 20px;
+    }
+  }
+
+  &__chair-img {
+    @include small {
+      width: 100px;
+      height: auto;
+    }
+  }
+
+  &__description {
+    padding: 0 22px;
+
+    @include large {
+      padding: 0 40px;
+    }
+  }
+
+  &__price {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 24.61px;
+    letter-spacing: 1.5px;
+
+    @include medium {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__buy-btn {
+    display: inline-block;
+    color: $white;
+    background-color: $green;
+    border-color: transparent;
+    padding: 10px 38px;
+    border-radius: 19px;
+    letter-spacing: 1.5px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: transparent;
+      color: $green;
+      border: 1px solid $green;
+    }
+
+    @include medium {
+      padding: 8px 28px;
+      letter-spacing: 1px;
+      border-radius: 15px;
+      font-size: 12px;
+    }
+  }
+
+  &__box3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+    padding: 0 10px;
+
+    @include large {
+      padding: 0 30px;
+    }
+
+    @include medium {
+      margin-top: 3rem;
+    }
+
+    @include small {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__promotions {
+    background-color: $green;
+    color: $white;
+    width: 49%;
+    padding: 11px 43px 33px 41px;
+
+    @include large {
+      padding: 11px 22px 22px 25px;
+    }
+
+    @include small {
+      width: 85%;
+      margin: 0 auto 20px;
+    }
+  }
+
+  &__prom1-inner1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__prom1-inner2 {
+    @include medium {
+      display: none;
+    }
+  }
+
+  &__prom-title {
+    font-size: 18px;
+    line-height: 21.09px;
+  }
+
+  &__prom-link {
+    display: inline-block;
+    border: 1px solid $white;
+    border-radius: 19px;
+    line-height: 16.41px;
+    padding: 10px 30px;
+
+    &:hover {
+      background-color: $white;
+      color: $green;
+    }
+
+    @include small {
+      padding: 8px 20px;
+      font-size: 12px;
+    }
+  }
+
+  &__text1 {
+    width: 73%;
+    margin-bottom: 23px;
+
+    @include large {
+      width: 90%;
+    }
+
+    @include small {
+      width: 100%;
+    }
+  }
+
+  &__text2 {
+    width: 32%;
+    margin-bottom: 20px;
+
+    @include extraLarge {
+      width: 55%;
+    }
+
+    @include small {
+      width: 100%;
+    }
+  }
+
+  &__envelope-img {
+    @include extraLarge {
+      width: 90px;
+      height: auto;
+    }
+
+    @include large {
+      width: 80px;
+    }
+  }
+
+  &__input {
+    border-color: transparent;
+    font: 400 $mainFontSize $mainFont;
+    border-radius: 23px;
+    padding: 8px 15px 9px 22px;
+    width: 70%;
+
+    &::placeholder {
+      color: #C4C4C4;
+    }
+
+    @include large {
+      width: 13rem;
+    }
+
+    @include small {
+      width: 9rem;
+    }
+  }
+}

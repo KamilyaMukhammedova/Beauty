@@ -5,14 +5,15 @@
   padding: 11% 0 20.8% 0;
 
   @include medium {
-    background: url(../../images/main-image.png) 70% center/cover no-repeat;
+    background: url(../../images/main-image.png) 64% center/cover no-repeat;
     padding: 0;
     height: 400px;
-    margin-bottom: 200px;
+    margin-bottom: 9rem;
   }
 
   @include small {
-    background-position: 66% center;
+    height: 300px;
+    background-position: 65% center;
   }
 
   &__test {
@@ -49,12 +50,12 @@
     }
 
     @include large {
-      font-size: 30px;
+      font-size: 37px;
       line-height: 20px;
     }
 
     @include small {
-      font-size: 26px;
+      font-size: 29px;
     }
   }
 
@@ -101,6 +102,12 @@
     @include extraLarge {
       letter-spacing: 1px;
       padding: 10px 25px 10px 27px;
+    }
+
+    @include medium {
+      background-color: $green;
+      color: $white;
+      border-color: transparent;
     }
 
     @include small {

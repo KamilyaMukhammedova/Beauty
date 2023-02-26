@@ -240,15 +240,16 @@ li {
 }
 @media screen and (max-width: 768px) {
   .main-block {
-    background: url(../../images/main-image.png) 70% center/cover no-repeat;
+    background: url(../../images/main-image.png) 64% center/cover no-repeat;
     padding: 0;
     height: 400px;
-    margin-bottom: 200px;
+    margin-bottom: 9rem;
   }
 }
 @media screen and (max-width: 576px) {
   .main-block {
-    background-position: 66% center;
+    height: 300px;
+    background-position: 65% center;
   }
 }
 .main-block__test {
@@ -287,13 +288,13 @@ li {
 }
 @media screen and (max-width: 997px) {
   .main-block__title {
-    font-size: 30px;
+    font-size: 37px;
     line-height: 20px;
   }
 }
 @media screen and (max-width: 576px) {
   .main-block__title {
-    font-size: 26px;
+    font-size: 29px;
   }
 }
 .main-block__text {
@@ -344,9 +345,288 @@ li {
     padding: 10px 25px 10px 27px;
   }
 }
+@media screen and (max-width: 768px) {
+  .main-block__link {
+    background-color: #66C05D;
+    color: #FFFFFF;
+    border-color: transparent;
+  }
+}
 @media screen and (max-width: 576px) {
   .main-block__link {
     font-size: 12px;
     padding: 8px 22px 8px 25px;
+  }
+}
+
+.special-offer {
+  padding-top: 54px;
+}
+@media screen and (max-width: 768px) {
+  .special-offer {
+    padding-top: 30px;
+  }
+}
+.special-offer__box1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 55px 0 9px;
+}
+@media screen and (max-width: 1140px) {
+  .special-offer__box1 {
+    padding-left: 25px;
+  }
+}
+@media screen and (max-width: 997px) {
+  .special-offer__box1 {
+    padding: 0;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 768px) {
+  .special-offer__box1 {
+    padding: 0;
+  }
+}
+.special-offer__title {
+  color: #000000;
+  font-size: 24px;
+  line-height: 28.13px;
+}
+@media screen and (max-width: 768px) {
+  .special-offer__title {
+    width: 100%;
+    text-align: center;
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .special-offer__truck-div {
+    display: none;
+  }
+}
+.special-offer__box2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 1140px) {
+  .special-offer__box2 {
+    padding: 0 25px;
+  }
+}
+@media screen and (max-width: 997px) {
+  .special-offer__box2 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .special-offer__box2 {
+    display: block;
+  }
+}
+.special-offer__card {
+  background-color: #FFFFFF;
+  width: 23%;
+  text-align: center;
+  padding: 20px 0 15px;
+}
+@media screen and (max-width: 997px) {
+  .special-offer__card {
+    padding-bottom: 25px;
+    width: 40%;
+    margin: 0 2% 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .special-offer__card {
+    width: 46%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .special-offer__card {
+    width: 93%;
+    margin: 0 auto 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .special-offer__chair-img {
+    width: 100px;
+    height: auto;
+  }
+}
+.special-offer__description {
+  padding: 0 22px;
+}
+@media screen and (max-width: 997px) {
+  .special-offer__description {
+    padding: 0 40px;
+  }
+}
+.special-offer__price {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 24.61px;
+  letter-spacing: 1.5px;
+}
+@media screen and (max-width: 768px) {
+  .special-offer__price {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+.special-offer__buy-btn {
+  display: inline-block;
+  color: #FFFFFF;
+  background-color: #66C05D;
+  border-color: transparent;
+  padding: 10px 38px;
+  border-radius: 19px;
+  letter-spacing: 1.5px;
+}
+.special-offer__buy-btn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: #66C05D;
+  border: 1px solid #66C05D;
+}
+@media screen and (max-width: 768px) {
+  .special-offer__buy-btn {
+    padding: 8px 28px;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    font-size: 12px;
+  }
+}
+.special-offer__box3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+  padding: 0 10px;
+}
+@media screen and (max-width: 997px) {
+  .special-offer__box3 {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .special-offer__box3 {
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .special-offer__box3 {
+    display: block;
+    text-align: center;
+  }
+}
+.special-offer__promotions {
+  background-color: #66C05D;
+  color: #FFFFFF;
+  width: 49%;
+  padding: 11px 43px 33px 41px;
+}
+@media screen and (max-width: 997px) {
+  .special-offer__promotions {
+    padding: 11px 22px 22px 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .special-offer__promotions {
+    width: 85%;
+    margin: 0 auto 20px;
+  }
+}
+.special-offer__prom1-inner1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .special-offer__prom1-inner2 {
+    display: none;
+  }
+}
+.special-offer__prom-title {
+  font-size: 18px;
+  line-height: 21.09px;
+}
+.special-offer__prom-link {
+  display: inline-block;
+  border: 1px solid #FFFFFF;
+  border-radius: 19px;
+  line-height: 16.41px;
+  padding: 10px 30px;
+}
+.special-offer__prom-link:hover {
+  background-color: #FFFFFF;
+  color: #66C05D;
+}
+@media screen and (max-width: 576px) {
+  .special-offer__prom-link {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+}
+.special-offer__text1 {
+  width: 73%;
+  margin-bottom: 23px;
+}
+@media screen and (max-width: 997px) {
+  .special-offer__text1 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .special-offer__text1 {
+    width: 100%;
+  }
+}
+.special-offer__text2 {
+  width: 32%;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1140px) {
+  .special-offer__text2 {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .special-offer__text2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .special-offer__envelope-img {
+    width: 90px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 997px) {
+  .special-offer__envelope-img {
+    width: 80px;
+  }
+}
+.special-offer__input {
+  border-color: transparent;
+  font: 400 14px "Roboto", sans-serif;
+  border-radius: 23px;
+  padding: 8px 15px 9px 22px;
+  width: 70%;
+}
+.special-offer__input::placeholder {
+  color: #C4C4C4;
+}
+@media screen and (max-width: 997px) {
+  .special-offer__input {
+    width: 13rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .special-offer__input {
+    width: 9rem;
   }
 }
