@@ -1,0 +1,118 @@
+.footer {
+  &__top {
+    background-color: $white;
+    color: $black;
+  }
+
+  &__top-inner,
+  &__top-box1,
+  &__bottom-inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__top-inner {
+    justify-content: space-between;
+    padding: 38px 11px;
+
+    @include extraLarge {
+      padding: 38px 20px;
+    }
+
+    @include large {
+      font-size: 12px;
+    }
+
+    @include medium {
+      display: block;
+      text-align: center;
+      padding: 20px;
+    }
+  }
+
+  &__top-box1 {
+    @include medium {
+      width: 50%;
+      margin: 0 auto 10px;
+      justify-content: center;
+    }
+
+    @include small {
+      width: 70%;
+    }
+  }
+
+  &__icon-div {
+    margin-right: 19px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid $green;
+    line-height: 52px;
+    text-align: center;
+
+    @include large {
+      margin-right: 8px;
+    }
+
+    @include medium {
+      margin-right: 0;
+    }
+  }
+
+  &__top-box3 {
+    width: 29%;
+
+    @include extraLarge {
+      width: 35%;
+    }
+
+    @include large {
+      font-size: 12px;
+    }
+
+    @include medium {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  &__number, &__btn {
+    @include large {
+      font-size: 12px;
+    }
+  }
+
+  &_instagram-ic {
+    line-height: 59px;
+  }
+
+  &__link-icon:hover {
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  &__bottom {
+    color: #828282;
+    font-size: 12px;
+    line-height: 14.06px;
+    padding: 13px 5px;
+
+    @include extraLarge {
+      padding: 13px 20px;
+    }
+  }
+
+  &__bottom-inner {
+    justify-content: space-between;
+
+    @include large {
+      display: block;
+      font-size: 10px;
+    }
+
+    @include medium {
+      text-align: center;
+    }
+  }
+}
